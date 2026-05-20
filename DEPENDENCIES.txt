@@ -1,0 +1,41 @@
+============================================
+Wallpaper Engine Media Extractor
+所需依赖 / Required Dependencies
+============================================
+
+一、必需 / Required
+──────────────────
+Python 3.8 或更高版本
+  https://www.python.org/downloads/
+
+  安装时请勾选 "Add Python to PATH" (Windows)
+  或使用包管理器 (macOS: brew install python3)
+
+二、可选（推荐）/ Optional (Recommended)
+───────────────────────────────────────
+tkinterdnd2  — 图形界面拖拽支持
+  安装: pip3 install tkinterdnd2
+
+  如果不安装，GUI 仍可正常使用，只是无法从
+  文件夹拖拽文件到窗口（仍可点击"选择文件夹"按钮）
+
+三、可选（壁纸帧提取）/ Optional (Frame extraction)
+─────────────────────────────────────────────────
+如需从提取出的视频中截取某一帧作为壁纸：
+
+  1. ffmpeg（推荐）
+     macOS: brew install ffmpeg
+     Windows: winget install FFmpeg
+     Ubuntu: sudo apt install ffmpeg
+
+  2. opencv-python（替代方案）
+     pip3 install opencv-python
+
+四、安装完成后验证 / Verify
+───────────────────────────
+打开终端（Terminal），运行：
+  python3 --version
+  pip3 list | findstr tkinterdnd2  (Windows)
+  pip3 list | grep tkinterdnd2     (macOS/Linux)
+
+看到版本号即表示安装成功。

@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+*.egg
+dist/*.egg
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# Project build artifacts (unpacked releases - zips are the deliverables)
+dist/WallpaperEngineExtractor.app/
+dist/WallpaperEngineExtractor_Windows/
+
+# PyInstaller artifacts
+*.spec
+build/pyinstaller/
+
+# Temp extraction outputs
+_temp_extract/
+
+# Logs
+*.log

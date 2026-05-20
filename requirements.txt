@@ -1,0 +1,10 @@
+# Wallpaper Engine Media Extractor
+#
+# Required: Python 3.8+ (no core dependencies)
+#
+# Install for GUI drag-and-drop support:
+#   pip install tkinterdnd2
+#
+# Install for video frame extraction:
+#   pip install opencv-python
+#   or install ffmpeg via your package manager
