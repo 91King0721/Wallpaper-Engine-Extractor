@@ -21,6 +21,7 @@ Thumbs.db
 # Project build artifacts (unpacked releases - zips are the deliverables)
 dist/WallpaperEngineExtractor.app/
 dist/WallpaperEngineExtractor_Windows/
+dist/WallpaperEngineExtractor_macOS/
 
 # PyInstaller artifacts
 *.spec
