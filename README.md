@@ -93,8 +93,6 @@ ffmpeg -i outputs/video/wallpaper_4k.mp4 -ss 0 -vframes 1 wallpaper.png
 **Q: Drag and drop doesn't work?**  
 A: Run `pip3 install tkinterdnd2` and restart the app.
 
-**Q: macOS "Cannot verify developer" warning?**  
-A: Right-click → Open to bypass Gatekeeper.
 
 **Q: Windows CMD window closes immediately?**  
 A: Make sure Python 3 is installed and added to PATH.
