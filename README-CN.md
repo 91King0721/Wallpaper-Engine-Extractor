@@ -93,9 +93,6 @@ ffmpeg -i outputs/video/wallpaper_4k.mp4 -ss 0 -vframes 1 wallpaper.png
 **Q: 拖拽文件到窗口没反应？**  
 A: 请确认已执行 `pip3 install tkinterdnd2`。装好后重启程序即可。
 
-**Q: macOS 提示"无法验证开发者"？**  
-A: 右键 → 打开，即可绕过 Gatekeeper 运行。
-
 **Q: Windows 命令行窗口一闪而过？**  
 A: 检查 Python 3 是否正确安装并添加到 PATH。
 
