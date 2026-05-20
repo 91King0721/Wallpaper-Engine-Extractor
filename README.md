@@ -1,10 +1,12 @@
-[简体中文](README-CN.md) | [English](README.md)
+﻿[简体中文](README-CN.md) | [English](README.md)
 
 ---
 
 # Wallpaper Engine Media Extractor
 
 Extract videos, audio, images, and shaders from Wallpaper Engine scene wallpapers.
+
+> **Note:** Only **Video** type scene wallpapers (壁纸类型为「视频」) can extract complete video files (MP4). Scene wallpapers of other types (e.g., Scenes with 2D/3D rendering, Web, etc.) may only yield images, audio, shaders, and metadata — no standalone video file will be produced.
 
 ---
 
@@ -15,27 +17,27 @@ Extract videos, audio, images, and shaders from Wallpaper Engine scene wallpaper
 1. Install Python 3.8+ (see DEPENDENCIES.txt)
 2. Open terminal and run:
 
-```bash
+`ash
 pip3 install tkinterdnd2
-```
+`
 
 3. Download the release zip for your platform from Releases page, unzip
 
 ### macOS
 
-Double-click `Open.command`. Select scene folder → choose output folder → click "Extract".
+Double-click Open.command. Select scene folder → choose output folder → click "Extract".
 
 ### Windows
 
-Double-click `Open.bat`. Select scene folder → choose output folder → click "Extract".
+Double-click Open.bat. Select scene folder → choose output folder → click "Extract".
 
 ### Run Manually
 
-```bash
+`ash
 # After cloning or downloading
 pip3 install tkinterdnd2           # Install drag-and-drop support
-python3 gui.py                     # Launch GUI
-```
+python src/gui.py                  # Launch GUI
+`
 
 ---
 
@@ -43,31 +45,31 @@ python3 gui.py                     # Launch GUI
 
 ### 1. Select Input Folder
 
-Click "Select Folder" or drag a scene folder onto the window. The program will recursively scan for `.pkg` and `.tex` files.
+Click "Select Folder" or drag a scene folder onto the window. The program will recursively scan for .pkg and .tex files.
 
 ### 2. Choose Output Directory
 
-Default output is `outputs/` (project directory). Click "Browse" to change.
+Default output is outputs/ (project directory). Click "Browse" to change.
 
 ### 3. Extract
 
 Click "Extract" and wait. Results are organized into:
 
-```
+`
 output_dir/
 ├── audio/      Background music (MP3)
 ├── video/      Video textures (MP4)
 ├── data/       Scene metadata (JSON) and textures (TEX)
 └── shaders/    GLSL shaders (frag/vert)
-```
+`
 
 ### 4. Extract Wallpaper Frame from Video
 
-If `video/` contains an MP4 file (common for 60 FPS animated wallpapers):
+If ideo/ contains an MP4 file (common for 60 FPS animated wallpapers):
 
-```bash
+`ash
 ffmpeg -i outputs/video/wallpaper_4k.mp4 -ss 0 -vframes 1 wallpaper.png
-```
+`
 
 ---
 
@@ -75,23 +77,22 @@ ffmpeg -i outputs/video/wallpaper_4k.mp4 -ss 0 -vframes 1 wallpaper.png
 
 | File | Purpose |
 |------|---------|
-| `gui.py` | GUI application |
-| `run.py` | CLI one-click extraction |
-| `extractor.py` | Manual extraction CLI |
-| `extractor/` | Core extraction modules |
-| `src/` | Python source directory in releases |
-| `Open.command` | macOS double-click launcher |
-| `Open.bat` | Windows double-click launcher |
-| `build/` | Icons and packaging scripts |
-| `input/` | Place scene files here |
-| `outputs/` | Extraction results |
+| src/gui.py | GUI application |
+| src/run.py | CLI one-click extraction |
+| src/extractor.py | Manual extraction CLI |
+| src/extractor/ | Core extraction modules |
+| Open.command | macOS double-click launcher |
+| Open.bat | Windows double-click launcher |
+| uild/ | Icons and packaging scripts |
+| input/ | Place scene files here |
+| outputs/ | Extraction results |
 
 ---
 
 ## FAQ
 
 **Q: Drag and drop doesn't work?**  
-A: Run `pip3 install tkinterdnd2` and restart the app.
+A: Run pip3 install tkinterdnd2 and restart the app.
 
 
 **Q: Windows CMD window closes immediately?**  

@@ -34,12 +34,12 @@ def tr(zh, en):
 # ============================================================
 # Paths
 # ============================================================
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 INPUT_DIR = os.path.join(BASE_DIR, "input")
 OUTPUT_DIR = os.path.join(BASE_DIR, "outputs")
 TEMP_DIR = os.path.join(BASE_DIR, "_temp_extract")
 
-sys.path.insert(0, BASE_DIR)
+sys.path.insert(0, os.path.join(BASE_DIR, 'src'))
 from extractor.pkg import extract_pkg
 from extractor.tex import probe_tex, extract_tex
 from extractor.utils import format_size
