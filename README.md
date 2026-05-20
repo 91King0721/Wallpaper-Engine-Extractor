@@ -1,3 +1,7 @@
+[简体中文](README-CN.md) | [English](README.md)
+
+---
+
 # Wallpaper Engine Media Extractor
 
 Extract videos, audio, images, and shaders from Wallpaper Engine scene wallpapers.

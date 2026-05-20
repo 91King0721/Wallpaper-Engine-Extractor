@@ -1,3 +1,7 @@
+[English](README.md) | [简体中文](README-CN.md)
+
+---
+
 # Wallpaper Engine 视频音频资源提取器
 
 从 Wallpaper Engine 场景壁纸中提取视频、音频、图片、着色器等资源。
