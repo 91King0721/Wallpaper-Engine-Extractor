@@ -23,11 +23,11 @@ pip3 install tkinterdnd2
 
 ### macOS 用户
 
-解压后双击 `WallpaperEngineExtractor.app`，选择场景文件夹 → 选择输出目录 → 点击「一键提取」。
+解压后双击 `Open.command`→ 选择场景文件夹 → 选择输出目录 → 点击「一键提取」。
 
 ### Windows 用户
 
-解压后双击 `WallpaperEngineExtractor.bat`，选择场景文件夹 → 选择输出目录 → 点击「一键提取」。
+解压后双击 `Open.bat` → 选择场景文件夹 → 选择输出目录 → 点击「一键提取」。
 
 ### 手动运行（通用）
 
@@ -75,11 +75,13 @@ ffmpeg -i outputs/video/wallpaper_4k.mp4 -ss 0 -vframes 1 wallpaper.png
 
 | 文件 | 作用 |
 |------|------|
-| `gui.py` | 图形界面程序（主入口） |
+| `gui.py` | 图形界面程序 |
 | `run.py` | 命令行一键提取脚本 |
 | `extractor.py` | 手动分步提取 CLI |
 | `extractor/` | 提取核心模块 |
-| `dist/` | 发布包（macOS .app / Windows .bat） |
+| `src/` | 发布包中的 Python 源码目录 |
+| `Open.command` | macOS 双击启动脚本 |
+| `Open.bat` | Windows 双击启动脚本 |
 | `build/` | 图标和打包脚本 |
 | `input/` | 放入待提取的场景文件 |
 | `outputs/` | 提取结果输出目录 |

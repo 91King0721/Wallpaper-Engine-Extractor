@@ -23,11 +23,11 @@ pip3 install tkinterdnd2
 
 ### macOS
 
-Double-click `WallpaperEngineExtractor.app`. Select scene folder → choose output folder → click "Extract".
+Double-click `Open.command`. Select scene folder → choose output folder → click "Extract".
 
 ### Windows
 
-Double-click `WallpaperEngineExtractor.bat`. Select scene folder → choose output folder → click "Extract".
+Double-click `Open.bat`. Select scene folder → choose output folder → click "Extract".
 
 ### Run Manually
 
@@ -75,11 +75,13 @@ ffmpeg -i outputs/video/wallpaper_4k.mp4 -ss 0 -vframes 1 wallpaper.png
 
 | File | Purpose |
 |------|---------|
-| `gui.py` | GUI application (main entry) |
+| `gui.py` | GUI application |
 | `run.py` | CLI one-click extraction |
 | `extractor.py` | Manual extraction CLI |
 | `extractor/` | Core extraction modules |
-| `dist/` | Release packages (.app / .bat) |
+| `src/` | Python source directory in releases |
+| `Open.command` | macOS double-click launcher |
+| `Open.bat` | Windows double-click launcher |
 | `build/` | Icons and packaging scripts |
 | `input/` | Place scene files here |
 | `outputs/` | Extraction results |
